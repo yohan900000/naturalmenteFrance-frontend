@@ -7,7 +7,15 @@
 /***
 **** PARTIALS ****
 ***/
-
 @import 'partials/header';
 @import 'partials/navigation';
 @import 'partials/footer';
+
+/***
+**** PAGES ****
+***/
+@import 'pages/home/brochures';
+@import 'pages/home/partners';
+@import 'pages/home/footer';
+
+@import 'pages/coloration/coloration';

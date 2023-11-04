@@ -1,0 +1,16 @@
+section.partners {
+    background-color: $mediumGrey;
+    width: 100%;
+    height: 150px;
+    #container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .partners__content {
+            img {
+                width: 200px!important;
+                height: 100%;
+            }
+        }
+    }
+}

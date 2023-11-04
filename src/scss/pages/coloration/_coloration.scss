@@ -1,0 +1,23 @@
+section.coloration #container{
+    background-color: #fff;
+    margin: 40px auto;
+    box-shadow: 0 2px 20px rgb(216, 225, 232);
+    border: 1px solid $border;
+    padding: 20px;
+    h1 {
+        font-size: 30px;
+        color: $mediumDark;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            color: $lightDark;
+            width: 49%;
+            line-height: 30px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+footer {
+    height: 80px;
+    background-color: $lightGrey;
+    #container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p.copyright {
+font-weight: 400;
+font-size: 16px;
+color: #fff;
+i {
+font-style: italic;
+}
+        }
+        .pictures {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            img {
+                width: 50px;
+                color: red;
+            }
+        }
+    }
+}
