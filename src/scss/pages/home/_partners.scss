@@ -6,11 +6,9 @@ section.partners {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .partners__content {
-            img {
-                width: 200px!important;
-                height: 100%;
-            }
+        .partners__content img {
+            width: 200px!important;
+            height: 100%;
         }
     }
 }
