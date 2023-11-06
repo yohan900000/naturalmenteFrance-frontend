@@ -8,3 +8,18 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+
+.pictures {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    img {
+        width: 400px;
+        height: 330px;
+        background-color: #f6f8fc;
+        box-shadow: 0 2px 20px rgb(216, 225, 232);
+        border: 1px solid #DDDCDA;
+        padding: 30px;
+    }
+}
