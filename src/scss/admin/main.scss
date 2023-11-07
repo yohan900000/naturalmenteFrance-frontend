@@ -1,0 +1,11 @@
+@import '../fonts';
+@import '../reset';
+@import 'variables';
+@import 'base';
+
+#admin {
+    display: flex;
+
+    @import 'partials/navbar_left';
+    @import 'partials/topBar';
+}

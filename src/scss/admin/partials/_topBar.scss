@@ -1,0 +1,11 @@
+.top_bar {
+    background-color: $background;
+    border-bottom: 1px solid $border;
+    height: 60px;
+    width: calc(100% - 200px);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
