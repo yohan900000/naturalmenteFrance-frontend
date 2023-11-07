@@ -20,6 +20,11 @@
         b {
             font-weight: 700;
             font-size: 16px;
+            &.fz-30 {
+                font-size: 20px;
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }
         }
         &.couleur b {
             font-size: 20px;
