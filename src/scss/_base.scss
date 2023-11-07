@@ -22,4 +22,53 @@ body {
         border: 1px solid #DDDCDA;
         padding: 30px;
     }
+    &.no-bg img{
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        text-align: center;
+    }
+}
+
+h1 {
+    font-size: 30px;
+    color: $mediumDark;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    p {
+        color: $lightDark;
+        width: 49%;
+        line-height: 40px;
+        b {
+            font-weight: 700;
+            color: $copperBrown;
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+    &.grid-1, &.grid-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        p {
+            margin-bottom: 30px;
+            width: 100%;
+            b {
+                margin-bottom: -10px;
+            }
+        }
+    }
+    &.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: baseline;
+        p {
+            width: 90%;
+        }
+    }
 }
