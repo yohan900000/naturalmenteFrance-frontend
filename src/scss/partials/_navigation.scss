@@ -4,44 +4,48 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
     li {
         display: flex;
         align-items: center;
-        list-style-type: none;
-        padding: 18px 25px;
-        height: 100%;
         position: relative;
+        height: 100%;
+        padding: 18px 25px;
         font-size: 15px;
+        transition-duration: 0.5s;
+        
         a {
             text-decoration: none;
             font-weight: 500;
             color: #fff;
         }
+
         &.sub {
-            ul.submenu {
-                position: absolute;
-                left: 0;
-                width: 137px;
-                top: 50px;
-                display: none;
-                background-color: $lightGrey;
-            }
             &:hover ul.submenu {
-                top: 50px;
                 display: block;
                 li {
                     height: 50px;
                     padding: 18px 10px;
                     &:hover {
                         background-color: $mediumGrey;
-                        transition-duration: .5s;
                     }
                 }
             }
         }
+
         &:hover, &.sub:hover {
             background-color: $lightGrey;
-            transition-duration: .5s; /* Ajout de la propriété de transition pour le survol */
         }
+    }
+
+    ul.submenu {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 137px;
+        display: none;
+        background-color: $lightGrey;
     }
 }
