@@ -15,12 +15,16 @@ main {
         flex-direction: column;
         align-items: center;
         .container__main {
-            width: 900px;
+            width: 1000px;
             .main__top {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 50px;
+                margin-top: 50px;
+                &:first-child {
+                    margin-top: 0;
+                }
                 h2 {
                     font-size: 20px;
                     font-weight: 700;
@@ -48,6 +52,7 @@ main {
                 }
             }
             @import 'layouts/text_frame';
+            @import 'layouts/form';
         }
     }
 }
