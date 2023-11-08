@@ -1,8 +1,8 @@
 .top_bar {
     background-color: $background;
     border-bottom: 1px solid $border;
+    width: 100%;
     height: 60px;
-    width: calc(100% - 200px);
     margin-bottom: 40px;
     display: flex;
     align-items: center;
