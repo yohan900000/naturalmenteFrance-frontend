@@ -3,9 +3,9 @@
 @import 'variables';
 @import 'base';
 
-#admin {
+main {
     display: flex;
 
-    @import 'partials/navbar_left';
+    @import 'partials/navbarLeft';
     @import 'partials/topBar';
 }
