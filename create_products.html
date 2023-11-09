@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Naturalmente France</title>
+    <meta name="language" content="fr">
+    <meta name="description" content="description du site">
+    <meta name="keywords" content="mot clés référencement">
+    <meta name="author" content="WebXdev">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:title" content="titre du site">
+    <meta property="og:description" content="description du site">
+    <meta property="og:image" content="lien image">
+    <meta property="og:url" content="https://naturalmente-france.fr">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="app/assets/images/favicon.ico">
+    <link rel="stylesheet" href="app/css/admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.0/dist/css/tom-select.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top_bar"></div>
+    </header>
+    <main>
+        <div class="navbar_left">
+            <div class="title__navbar_left">Administration</div>
+            <div class="sep"></div>
+            <div class="navigation">
+                <span class="title__navigation">Pages</span>
+                <nav>
+                    <li class="active"><a href="admin.html"><i class="fas fa-home" alt="Accueil"></i> Accueil</a></li>
+                    <li><a href="#"><i class="fas fa-paint-brush" alt="Coloration"></i> Coloration</a></li>
+                    <li><a href="#"><i class="fas fa-cut" alt="Coiffant et finition"></i> Coiffant et finition</a></li>
+                    <li><a href="#"><i class="fas fa-spa" alt="Spa du cheveu"></i> Spa du cheveu</a></li>
+                    <li><a href="#"><i class="fas fa-mars" alt="Gentleman"></i> Gentleman</a></li>
+                    <li><a href="#"><i class="fas fa-envelope" alt="Contact"></i> Contact</a></li>
+                </nav>
+            </div>
+            <div class="sep"></div>
+            <div class="navigation">
+                <span class="title__navigation">Nos gammes</span>
+                <nav>
+                    <li><a href="#"><i class="fas fa-tree" alt="Nature Inside"></i> Nature Inside</a></li>
+                    <li><a href="#"><i class="fas fa-sprout" alt="In Bloom"></i> In Bloom</a></li>
+                    <li><a href="#"><i class="fas fa-sun" alt="Sun"></i> Sun</a></li>
+                    <li><a href="#"><i class="fas fa-heart" alt="Revitalizing"></i> Revitalizing</a></li>
+                </nav>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="top_bar">
+            </div>
+            <div class="content">
+                <div class="container__main">
+                    <div class="main__top">
+                        <h2>Création</h2>
+                        <div class="links">
+                            <a href="#" data-form-type="texte-encadrer">Ajouter un texte encadré</a>
+                            <a href="#" data-form-type="texte">Ajouter un texte</a>
+                            <a href="#" data-form-type="image">Ajouter une image</a>
+                            <a href="#" data-form-type="product">Ajouter un produit</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="form__main">
+                            <form action="" method="POST" id="texte-encadrer-form">
+                                <div class="title__form">Exemple</div>
+                                <p class="products__description">
+                                    Tous les produits contiennent des huiles essentielles de culture biologique d'une pureté de 100%. Ils ne contiennent pas d’huile minérale, de laureth sulfate de sodium (SLS), 
+                                    de parabens, de formaldéhyde, de soude caustique, d’acides éthylènediaminetétraacétique (EDTA), d’éthanolamines (DEA, TEA, MEA).
+                                </p>
+                                <span class="sep"></span>
+                                <div class="form-group">
+                                    <label for="title">Votre texte</label>
+                                    <textarea></textarea>
+                                </div>
+                                <button type="submit" name="create_product">Envoyer</button>
+                            </form>
+                            <form action="" method="POST" id="texte-form" class="hidden">
+                                <div class="title__form">Description</div>
+                                <span class="sep"></span>
+                            </form>
+                            <form action="" method="POST" id="image-form" class="hidden">
+                                <input type="file" accept="image/*">
+                                <button type="submit">Envoyer</button>
+                            </form>
+                            <form action="" method="POST" id="product-form" class="hidden">
+                                <div class="title__form">Création d'un produit</div>
+                                <span class="sep"></span>
+                                <div class="form-group">
+                                    <label for="title">Titre</label>
+                                    <input type="text" id="title" placeholder="Titre du produit">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Catégorie</label>
+                                    <select name="category" id="category" multiple>
+                                        <option value="html">Html</option>
+                                        <option value="css">Css</option>
+                                        <option value="javascript">Javascript</option>
+                                        <option value="php">Php</option>
+                                        <option value="laravel">Laravel</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea id="description"></textarea>
+                                </div>
+                                <button type="submit" name="create_product">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app/js/tynicme/tinymce.min.js"></script>
+    <script src="app/js/tynicme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.0/dist/js/tom-select.complete.min.js"></script>
+    <script src="app/js/tomSelect.js"></script>
+    <script src="app/js/formProducts.js"></script>
+    <script src="https://kit.fontawesome.com/027933835a.js" crossorigin="anonymous"></script>
+</body>
+</html>
